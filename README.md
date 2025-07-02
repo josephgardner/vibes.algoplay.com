@@ -1,3 +1,3 @@
-# tools.algoplay.com
+# vibes.algoplay.com
 
 - [get sorted](/getsorted)
