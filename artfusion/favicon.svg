@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <!-- Gradient definitions for artistic feel -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="chipGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:0.7" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background circle with gradient -->
+  <circle cx="50" cy="50" r="48" fill="url(#bgGradient)" />
+  
+  <!-- Glass-morphism overlay -->
+  <circle cx="50" cy="50" r="42" fill="url(#chipGradient)" opacity="0.2" />
+  
+  <!-- Art brush stroke elements -->
+  <path d="M25 30 Q40 25 55 35 Q65 45 70 60 Q60 65 45 55 Q35 45 25 30" 
+        fill="rgba(255,255,255,0.8)" filter="url(#glow)" />
+  
+  <!-- Generative dots/pixels pattern -->
+  <circle cx="35" cy="25" r="2" fill="#fbbf24" opacity="0.8" />
+  <circle cx="65" cy="28" r="1.5" fill="#f59e0b" opacity="0.9" />
+  <circle cx="72" cy="45" r="2" fill="#06d6a0" opacity="0.7" />
+  <circle cx="68" cy="65" r="1.8" fill="#118ab2" opacity="0.8" />
+  <circle cx="45" cy="75" r="2.2" fill="#ef476f" opacity="0.9" />
+  <circle cx="28" cy="68" r="1.6" fill="#ffd166" opacity="0.8" />
+  <circle cx="22" cy="50" r="1.9" fill="#06ffa5" opacity="0.7" />
+  
+  <!-- Central creative spark -->
+  <circle cx="50" cy="50" r="8" fill="rgba(255,255,255,0.3)" />
+  <circle cx="50" cy="50" r="4" fill="rgba(255,255,255,0.8)" filter="url(#glow)" />
+  
+  <!-- Abstract connecting lines -->
+  <path d="M35 35 Q50 40 65 35" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" fill="none" opacity="0.7" />
+  <path d="M35 65 Q50 60 65 65" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" fill="none" opacity="0.7" />
+</svg>
