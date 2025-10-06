@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Frequency Feedback - A musical frequency-matching game">
+  <title>Frequency Feedback</title>
+  <script type="module" crossorigin src="./assets/index-Bj3BB90-.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-C1sD1wkE.css">
+</head>
+<body>
+  <div id="game-container">
+    <!-- HUD -->
+    <div id="hud">
+      <div class="hud-left">
+        <span id="score">SCORE: 0</span>
+        <span id="wave">WAVE: 1</span>
+      </div>
+      <div class="hud-right">
+        <span id="lives">LIVES: ███</span>
+      </div>
+    </div>
+
+    <!-- Main game area -->
+    <div id="game-area">
+      <!-- Dial section -->
+      <div id="dial-section">
+        <div id="dial-container">
+          <div id="dial">
+            <div id="dial-indicator"></div>
+          </div>
+        </div>
+        <div id="frequency-display">440 Hz</div>
+      </div>
+
+      <!-- Canvas for frequency visualization -->
+      <canvas id="game-canvas"></canvas>
+    </div>
+
+    <!-- Start overlay -->
+    <div id="start-overlay">
+      <h1>FREQUENCY FEEDBACK</h1>
+      <p>Match monster frequencies to destroy them</p>
+      <button id="start-button">START GAME</button>
+      <div id="controls-hint">
+        <p>Controls: Mouse drag dial • Arrow keys • Mouse wheel</p>
+      </div>
+    </div>
+
+    <!-- Game over overlay -->
+    <div id="gameover-overlay" class="hidden">
+      <h1>GAME OVER</h1>
+      <p id="final-score">SCORE: 0</p>
+      <button id="restart-button">RESTART</button>
+    </div>
+  </div>
+
+</body>
+</html>
